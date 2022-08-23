@@ -4,7 +4,14 @@
     gap: 30px;
 }
     .port-card {
-        width: calc((100% - 60px) / 3);
+        width: 100%;
+        // min-height: 404px;
+        @include tablet {
+            width: calc((100% - 30px) / 2);
+        }
+        @include desktop {
+            width: calc((100% - 60px) / 3);
+        }
 
         background-color: var(--main-sections-color);
         border: 1px solid #EEEEEE;
