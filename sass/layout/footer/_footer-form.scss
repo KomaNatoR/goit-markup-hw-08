@@ -1,6 +1,13 @@
-    .footer-container-form {margin-left: auto;}
+    .footer-container-form {
+
+        @include desktop {margin-left: auto;}
+
+        @media screen and (max-width:1199px) {text-align: center;}
+    }
+    
     .footer-form {
-        display: flex;
+        @include desktop {display: flex;}
+
 
         & .btn {
             width: 200px;
@@ -9,15 +16,25 @@
             display: flex;
             justify-content: center;
             gap: 10px;
+
+            @media screen and (max-width:1199px) {
+                margin-top: 20px;
+            }
         }
     }
 
 
         .footer-form__email {
-            width: 358px;
+
+            min-width: 290px;
+            @include mobile {min-width: 450px;}
+            @include desktop {
+                min-width: 358px;
+                margin-right: 12px;
+                padding-left: 16px;
+            }
             height: 50px;
-            margin-right: 12px;
-            padding-left: 16px;
+
 
             color: var(--main-sections-color);
             background-color: transparent;

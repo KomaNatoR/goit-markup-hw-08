@@ -1,4 +1,9 @@
+    .footer-contacts {
+        @media screen and (max-width:1199px) {text-align: center;}
+    }
+    
     .address {
+
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -6,7 +11,9 @@
         
         color: #ffffff;
     }
-    .address-margin {margin-top: 20px;}
+    .address-margin {
+        margin-top: 20px;
+    }
 
     .address__item {margin-top: 9px;}
 

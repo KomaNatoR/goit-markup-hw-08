@@ -618,7 +618,29 @@ img {
 
 .footer .container {
   display: flex;
-  align-items: baseline;
+}
+@media screen and (max-width: 1199px) {
+  .footer .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer .container {
+    column-gap: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    align-items: baseline;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-contacts {
+    text-align: center;
+  }
 }
 
 .address {
@@ -646,8 +668,15 @@ img {
   outline-color: var(--accent-color);
 }
 
-.footer-soc {
-  margin-left: 70px;
+@media screen and (min-width: 1200px) {
+  .footer-soc {
+    margin-left: 70px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .footer-soc {
+    text-align: center;
+  }
 }
 
 .footer-title {
@@ -670,12 +699,21 @@ img {
   outline-color: #FFFFFF;
 }
 
-.footer-container-form {
-  margin-left: auto;
+@media screen and (min-width: 1200px) {
+  .footer-container-form {
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .footer-container-form {
+    text-align: center;
+  }
 }
 
-.footer-form {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: flex;
+  }
 }
 .footer-form .btn {
   width: 200px;
@@ -684,18 +722,33 @@ img {
   justify-content: center;
   gap: 10px;
 }
+@media screen and (max-width: 1199px) {
+  .footer-form .btn {
+    margin-top: 20px;
+  }
+}
 
 .footer-form__email {
-  width: 358px;
+  min-width: 290px;
   height: 50px;
-  margin-right: 12px;
-  padding-left: 16px;
   color: var(--main-sections-color);
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   transition: border-color var(--duration) var(--timing-function);
+}
+@media screen and (min-width: 480px) {
+  .footer-form__email {
+    min-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form__email {
+    min-width: 358px;
+    margin-right: 12px;
+    padding-left: 16px;
+  }
 }
 .footer-form__email:hover, .footer-form__email:focus {
   border-color: var(--accent-color);
