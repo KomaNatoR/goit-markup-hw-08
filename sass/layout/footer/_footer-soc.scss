@@ -1,0 +1,25 @@
+    .footer-soc {margin-left: 70px;}
+    .footer-title {
+        margin-bottom: 20px;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.143;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+    }
+
+    .footer-soc--color {
+
+        
+        color: #FFFFFF;
+        background-color: rgb(255,255,255,10%);
+
+        transition: 
+        background-color var(--duration) var(--timing-function), 
+        outline-color var(--duration) var(--timing-function);
+
+        &:hover, &:focus {background-color: var(--accent-color); outline-color: #FFFFFF;}
+    }

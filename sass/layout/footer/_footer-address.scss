@@ -1,0 +1,21 @@
+    .address {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        
+        color: #ffffff;
+    }
+    .address-margin {margin-top: 20px;}
+
+    .address__item {margin-top: 9px;}
+
+        .address__link {
+
+        color: rgb(255,255,255,60%);
+        
+        transition: color var(--duration) var(--timing-function);
+
+        &:hover, &:focus {color: var(--accent-color); outline-color: var(--accent-color);}        
+        }
+        
