@@ -1,8 +1,11 @@
 .ourworks {
     padding-top: 0;
     background-color: var(--main-sections-color);
-
+    
+    @media screen and (max-width:1199px) {
+        display: none;
     }
+}
 
     .ourworks-list {
         display: flex;

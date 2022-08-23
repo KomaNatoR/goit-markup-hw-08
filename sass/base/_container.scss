@@ -1,8 +1,11 @@
 .container {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+
+    @media screen and (max-width:479px) {
+        padding-left: 15px;
+        padding-right: 15px;      
+    }
 
     @include mobile {
         width: 450px;
@@ -14,12 +17,19 @@
 
     @include desktop {
         width: 1200px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     background-color: var(--main-sections-color);
+
+    @include desktop {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }    
 }
