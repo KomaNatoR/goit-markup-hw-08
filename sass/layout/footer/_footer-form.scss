@@ -26,10 +26,10 @@
 
         .footer-form__email {
 
-            min-width: 290px;
-            @include mobile {min-width: 450px;}
+            width: calc(100vw - 30px);
+            @include mobile {width: 450px;}
             @include desktop {
-                min-width: 358px;
+                width: 358px;
                 margin-right: 12px;
                 padding-left: 16px;
             }

@@ -729,7 +729,7 @@ img {
 }
 
 .footer-form__email {
-  min-width: 290px;
+  width: calc(100vw - 30px);
   height: 50px;
   color: var(--main-sections-color);
   background-color: transparent;
@@ -740,12 +740,12 @@ img {
 }
 @media screen and (min-width: 480px) {
   .footer-form__email {
-    min-width: 450px;
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-form__email {
-    min-width: 358px;
+    width: 358px;
     margin-right: 12px;
     padding-left: 16px;
   }
