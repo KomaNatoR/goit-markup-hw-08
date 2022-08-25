@@ -277,6 +277,9 @@ img {
 .mobmenu-nav__link {
   color: var(--title-text-color);
 }
+.mobmenu-nav__link.current {
+  color: var(--accent-color);
+}
 
 .mobmenu-contacts__link-tel {
   font-size: 24px;
