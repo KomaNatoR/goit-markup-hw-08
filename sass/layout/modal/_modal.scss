@@ -1,3 +1,16 @@
+    
+    .backdrop {
+        position: fixed;
+        top: 0;
+
+        width: 100vw;
+        height: 100vh;
+
+        background-color: rgba(0, 0, 0, 0.2);
+
+        transition: opacity var(--duration) var(--timing-function) 250ms, 
+            visibility var(--duration) var(--timing-function) 250ms;
+    }
     .modal {
         position: absolute;
         top: 50%;
@@ -58,11 +71,4 @@
             transition: fill var(--duration) var(--timing-function);
         
             .modalbtn-close:hover & { fill: var(--accent-color);  }
-        }
-
-
-        .is-hidden {
-            opacity: 0;
-            visibility: hidden;
-            pointer-events: none;
         }

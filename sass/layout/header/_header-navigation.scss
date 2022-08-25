@@ -1,7 +1,9 @@
 .navsite {}
     .navsite--margin {margin-left: 90px;}
-    .navsite__list {
-        display: flex;
+    .navsite__list {    
+        display: none;
+        @include tablet {display: flex;}
+
         column-gap: 50px;
     }
     .navsite__item {
