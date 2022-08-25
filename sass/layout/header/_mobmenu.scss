@@ -26,16 +26,17 @@
     transition: opacity var(--duration) var(--timing-function), 
         visibility var(--duration) var(--timing-function),
         transform 500ms var(--timing-function);
+    
+    &.is-hidden {
+        transform: translateY(-100%);
+    }
 }
 
-.mobmenu.is-hidden {
-    transform: translateY(-100%);
-}
 
     .mobmenu-nav__item:not(:last-child) {margin-bottom: 32px;}
     .mobmenu-nav__link {color: var(--title-text-color);}
 
-.mobmenu-contacts__tel {
+.mobmenu-contacts__link-tel {
     font-size: 24px;
     line-height: 1.176;
     @include mobile {
@@ -45,7 +46,7 @@
     
     color: var(--accent-color);
 }
-.mobmenu-contacts__mail {
+.mobmenu-contacts__link-mail {
     margin-top: 32px;
 
     font-size: 17px;
@@ -59,12 +60,13 @@
 }
 
 .mobmenu-soc {
-    margin-top: 64px;
+    margin-top: 32px;
+    @include mobile {margin-top: 64px;}
 
     display: flex;
 
 }
-    .mobmenu-soc__item:not(:last-child) {
+    .mobmenu-soc__item:not(:last-child) .mobmenu-soc__link {
         border-right: 1px solid rgba(33, 33, 33, 0.2);
 
         margin-right: 3px;
