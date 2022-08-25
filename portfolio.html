@@ -14,7 +14,7 @@
 </head>
 <body>
         <!-- -===--- ГОЛОВА ---===- -->
-    <!-- <header class="header">
+    <header class="header">
     
         <div class="container header--container">
     
@@ -23,8 +23,8 @@
     
             <nav class="navsite navsite--margin">
                 <ul class="navsite__list nopoint">
-                    <li class="navsite__item"><a href="./index.html" class="navsite__link noline">Студія</a></li>
-                    <li class="navsite__item"><a href="./portfolio.html" class="navsite__link noline current">Портфоліо</a></li>
+                    <li class="navsite__item"><a href="./index.html" class="navsite__link noline current">Студія</a></li>
+                    <li class="navsite__item"><a href="./portfolio.html" class="navsite__link noline">Портфоліо</a></li>
                     <li class="navsite__item"><a href="/Контакти" class="navsite__link noline">Контакти</a></li>
                 </ul>
             </nav>
@@ -41,8 +41,58 @@
                         </svg>+38097 111 11 11</a>
                 </li>
             </ul>
+    
+            <button type="button" class="btnmenu-open btnmenu">
+                <svg class="btnmenu-open__icon" width="40" height="40">
+                    <use href="./images/symbol-defs.svg#icon-mobmenu-open"></use>
+                </svg>
+            </button>
         </div>
-    </header> -->
+    
+        <div class="mobmenu is-hidden">
+    
+            <button type="button" class="btnmenu-close btnmenu">
+                <svg class="btnmenu-close__icon" width="40" height="40">
+                    <use href="./images/symbol-defs.svg#icon-mobmenu-close"></use>
+                </svg>
+            </button>
+    
+            <div>
+                <nav class="mobmenu-nav">
+                    <ul class="mobmenu-nav__list nopoint">
+                        <li class="mobmenu-nav__item"><a href="./index.html" class="mobmenu-nav__link noline">Студія</a>
+                        </li>
+                        <li class="mobmenu-nav__item"><a href="./portfolio.html"
+                                class="mobmenu-nav__link noline">Портфоліо</a></li>
+                        <li class="mobmenu-nav__item"><a href="/Контакти" class="mobmenu-nav__link noline">Контакти</a></li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <div>
+                <ul class="mobmenu-contacts nopoint">
+                    <li class="mobmenu-contacts__item"><a href="tel:+380971111111" class="mobmenu-contacts__tel noline">
+                            +38097 111 11 11
+                        </a>
+                    </li>
+                    <li class="mobmenu-contacts__item"><a href="mailto:info@devstudio.com"
+                            class="mobmenu-contacts__mail noline">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+    
+                <ul class="mobmenu-soc nopoint">
+                    <li class="mobmenu-soc__item"><a href="" class="mobmenu-soc__link noline">Instagram</a></li>
+                    <li class="mobmenu-soc__item"><a href="" class="mobmenu-soc__link noline">Twitter</a></li>
+                    <li class="mobmenu-soc__item"><a href="" class="mobmenu-soc__link noline">Facebook</a></li>
+                    <li class="mobmenu-soc__item"><a href="" class="mobmenu-soc__link noline">Linkedin</a></li>
+                </ul>
+    
+            </div>
+        </div>
+    
+    </header>
         <!-- -===--- ТІЛО ---===- -->
     <main class="section">
         <div class="container">
@@ -211,7 +261,7 @@
     </main>
 
         <!-- -===--- НОГИ ---===- -->
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container">
     
             <div class="footer-contacts">
@@ -274,6 +324,6 @@
                 </form>
             </div>
         </div>
-    </footer> -->
+    </footer>
 </body>
 </html>
