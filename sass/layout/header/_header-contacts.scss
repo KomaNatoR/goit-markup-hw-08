@@ -3,6 +3,7 @@
         @include tablet {display: block;}
         @include desktop {display: flex;}
         column-gap: 30px;
+
     }
     .contacts--margin {margin-left: auto;}
     
@@ -33,4 +34,8 @@
 
         fill: currentColor;
     }
+
+        .icon--mail {@media screen and (max-width:1199px) {width: 14px;}}
+        .icon--tel {
+            @media screen and (max-width:1199px) {height: 14px;}}
         

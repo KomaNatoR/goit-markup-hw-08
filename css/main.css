@@ -435,6 +435,18 @@ img {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .icon--mail {
+    width: 14px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .icon--tel {
+    height: 14px;
+  }
+}
+
 .hero {
   text-align: center;
   color: #FFFFFF;
