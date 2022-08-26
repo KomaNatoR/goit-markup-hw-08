@@ -17,7 +17,9 @@
         left: 50%;
         transform: translate(-50%, -50%);
 
-        width: 528px;
+        width: 94vw;
+        @include mobile {width: 450px;}
+        @include desktop {width: 528px;}
         min-height: 581px;
         padding: 40px;
 
@@ -37,7 +39,8 @@
 
             font-weight: 700;
             font-size: 20px;
-            line-height: 1.15;
+            line-height: 1.5;
+            @include desktop {line-height: 1.15;}
             text-align: center;
             letter-spacing: 0.03em;
 

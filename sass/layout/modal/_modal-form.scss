@@ -45,7 +45,14 @@
 
             &:hover, &:focus {border-color: var(--accent-color);}
 
-            &::placeholder {color: rgba(117, 117, 117, 0.5);}
+            &::placeholder {
+                @media screen and (max-width:1199px) {
+                    font-size: 14px;
+                    line-height: 1.142;
+                }
+
+                color: rgba(117, 117, 117, 0.5);
+            }
         } 
         
         .input-data__icon {
@@ -76,8 +83,13 @@
         gap: 7px;
 
         font-weight: 400;
-        font-size: 14px;
-        line-height: 1.714;
+        font-size: 8px;
+        line-height: 1.166;
+        @include mobile {font-size: 12px;}
+        @include desktop {
+            font-size: 14px;
+            line-height: 1.714;
+        }
         letter-spacing: 0.03em;
         /* text-align: center; */
 
